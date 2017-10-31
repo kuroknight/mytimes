@@ -1,6 +1,3 @@
-div {
-  border: 1px solid black;
-}
 
 header {
   display: flex;
@@ -13,6 +10,7 @@ header {
   font-weight: bold;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
+  background-color: white;
 }
 
 .logo {
@@ -44,4 +42,47 @@ main {
 .column {
   flex-direction: column;
   margin: 20px;
+}
+
+.image-content {
+  display:flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  justify-content: center;
+}
+
+.main-story {
+  display: flex;
+  flex-direction: column;
+}
+.main-story .image-content{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  font-size: 40px;
+}
+
+.fall-season {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+}
+
+.hipster-camera {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+}
+
+.cat {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
