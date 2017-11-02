@@ -3,6 +3,7 @@ header {
   display: flex;
   position: fixed;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 80px;
   font-family: Verdana;
@@ -21,13 +22,16 @@ header {
 nav {
   padding-left: 40px;
 }
+span {
+  padding: 10px;
+}
 
 main {
   padding-top: 115px;
   display: flex;
 }
 
-.column .large {
+.column.large {
   width: 630px;
 }
 
@@ -40,24 +44,21 @@ main {
 }
 
 .column {
-  flex-direction: column;
-  margin: 20px;
+  margin: 15px;
 }
 
 .image-content {
-  display:flex;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 300px;
+  margin-top: 15px;
+  justify-content: center;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
-  color: white;
-  height: 300px;
-  justify-content: center;
 }
 
-.main-story {
-  display: flex;
-  flex-direction: column;
-}
 .main-story .image-content{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
   font-size: 40px;
@@ -85,4 +86,9 @@ p {
   display: flex;
   flex-direction: column;
   width: 300px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
 }
